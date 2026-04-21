@@ -1,4 +1,4 @@
-# SimpleMemo
+# SimpleMemo-T
 <!-- ![SimpleMemo](img/simplememo.png) -->
 <img src="img/icon.png" width="10%">
 
@@ -55,7 +55,7 @@ npm install           # 依存パッケージのインストール
 npm run tauri dev     # 開発用ビルド(バンドル版)
 npm run tauri -- dev --features portable # 開発用ビルド(ポータブル版)
 
-npm run build:bundle    # リリースビルド(バンドル版)
+npm run build:installer # リリースビルド(バンドル版)
 npm run build:portable  # リリースビルド(ポータブル版)
 ```
 
