@@ -1,0 +1,14 @@
+{
+  "name": "simplememo-t",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "tauri": "tauri",
+    "build:installer": "tauri build --bundles msi,nsis",
+    "build:portable": "tauri build --no-bundle --features portable"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "2.10.1"
+  }
+}

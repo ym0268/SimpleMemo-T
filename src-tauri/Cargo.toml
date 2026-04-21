@@ -1,0 +1,36 @@
+[package]
+name = "simplememo-t"
+version = "0.1.0"
+description = "Lightweight Tauri desktop memo app"
+authors = ["ym0268"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+# The `_lib` suffix may seem redundant but it is necessary
+# to make the lib name unique and wouldn't conflict with the bin name.
+# This seems to be only an issue on Windows, see https://github.com/rust-lang/cargo/issues/8519
+name = "simplememo_t_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[features]
+portable = []
+
+[build-dependencies]
+tauri-build = { version = "=2.5.6", features = [] }
+
+[dependencies]
+tauri = { version = "=2.10.3", features = [] }
+tauri-plugin-shell = "=2.3.5"
+tauri-plugin-dialog = "=2.6.0"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+encoding_rs = "0.8.35"
+chardetng = "1.0.0"
+sanitize-filename = "0.5"
+log = "0.4.25"
+simplelog = "0.12.2"
+
+[profile.release]
+opt-level = 3

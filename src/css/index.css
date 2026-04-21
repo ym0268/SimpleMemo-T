@@ -1,0 +1,48 @@
+textarea {
+    resize: none;
+    position: fixed;
+    top : 40px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    /* margin-bottom: 5px; */
+    outline: none;
+    font-size: inherit;
+    font-family: inherit;
+    overflow-anchor: none;
+}
+input {
+    position: fixed;
+    resize: none;
+    left: 90px;
+    right: 5px;
+    top: 10px;
+    height: 18px;
+    font-size: 14px;
+    outline: none;
+    border-width: thin;
+}
+
+body{
+    font-family: "Yu Gothic UI", "游ゴシック UI", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+}
+
+body.app-body {
+    background-color: rgb(255, 255, 255);
+}
+
+.is-hidden {
+    display: none;
+}
+
+.page-bg-0 {
+    background-color: honeydew;
+}
+
+.page-bg-1 {
+    background-color: oldlace;
+}
+
+.page-bg-2 {
+    background-color: azure;
+}

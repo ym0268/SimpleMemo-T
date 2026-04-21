@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/main_setting.css">
+    <script src="js/main_setting.js" charset="utf-8"></script>
+    <title>全体設定 - SimpleMemo</title>
+</head>
+
+<body>
+    <div class="container">
+        <h3>基本設定</h3>
+        <ul>
+            <li class="savepath">
+                <label for="savepath_textbox" class="input_label">保存先パス</label>
+                <input type="text" class="text" id="savepath_textbox">
+            </li>
+            <li class="font">
+                <label for="font_selector" class="input_label">フォント</label>
+                <select id="font_selector">
+                    <option value="Yu Gothic UI">Yu Gothic UI</option>
+                    <option value="Yu Gothic">Yu Gothic</option>
+                    <option value="HGSoeiKakupoptai">HGSoeiKakupoptai</option>
+                    <option value="Consolas">Consolas</option>
+                    <option value="Lucida Console">Lucida Console</option>
+                    <option value="MS Gothic">MS Gothic</option>
+                </select>
+            </li>
+            <li class="fontsize">
+                <label for="fontsize_textbox" class="input_label">フォントサイズ</label>
+                <input type="number" class="number" id="fontsize_textbox" min="1" step="1">
+            </li>
+            <li class="encoding">
+                <label for="encoding_selector" class="input_label">既定の文字コード</label>
+                <select id="encoding_selector">
+                    <option value="Utf8">UTF8</option>
+                    <option value="ShiftJis">SJIS</option>
+                    <!-- <option value="UTF8">UTF8</option> -->
+                    <!-- <option value="UTF8_BOM">UTF8_BOM</option> -->
+                    <!-- <option value="SJIS">SJIS</option> -->
+                    <!-- <option value="JIS">JIS</option> -->
+                    <!-- <option value="EUCJP">EUCJP</option> -->
+                    <!-- <option value="UTF16">UTF16</option> -->
+                    <!-- <option value="UTF16BE">UTF16BE</option> -->
+                    <!-- <option value="UTF16LE">UTF16LE</option> -->
+                    <!-- <option value="UTF16BE_BOM">UTF16BE_BOM</option> -->
+                    <!-- <option value="UTF16LE_BOM">UTF16LE_BOM</option> -->
+                </select>
+                <input type="checkbox" class="checkbox" id="autoencoding_checkbox">
+                <label for="autoencoding_checkbox" class="checkbox_label">文字コード自動判別</label>
+            </li>
+            <li class="topmost">
+                <label for="topmost_checkbox" class="input_label">常に手前に表示</label>
+                <input type="checkbox" class="checkbox" id="topmost_checkbox" name="常に手前に表示">
+            </li>
+        </ul>
+
+        <hr>
+        <!-- 高度な設定は未実装 -->
+        <!-- <h3>高度な設定</h3>
+        <ul>
+            <li class="load_lastfile">
+                <input type="checkbox" class="checkbox" id="load_lastfile_checkbox">
+                <label for="load_lastfile_checkbox" class="checkbox_label">前回のファイルを読み込む</label>
+            </li>
+            <li class="no_close_dialog">
+                <input type="checkbox" class="checkbox" id="no_close_dialog_checkbox">
+                <label for="no_close_dialog_checkbox" class="checkbox_label">保存済みの場合は閉じるダイアログを表示しない</label>
+            </li>
+            <li class="autosave">
+                <input type="checkbox" class="checkbox" id="autosave_checkbox">
+                <label for="autosave_checkbox" class="checkbox_label">自動保存</label>
+                <input type="number" id="autosave_input" min="1" max="99">（分）
+            </li>
+            <li class="autolock">
+                <input type="checkbox" class="checkbox" id="autolock_checkbox">
+                <label for="autolock_checkbox" class="checkbox_label">外部ファイル読み込み時に自動で編集不可にする</label>
+            </li>
+        </ul> -->
+        <footer>
+            <!-- TODO: https://qiita.com/d0ne1s/items/5c629bc543e70ed2bf98 -->
+            <!-- OK, キャンセルボタンなど -->
+            <button class="footer_button" id="cancel_button">キャンセル</button>
+            <button class="footer_button" id="ok_button">OK</button>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+body{
+    font-size: 14px;
+}
+
+footer{
+    width: 100%;
+    text-align: right;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+}
+
+.container{
+    padding-bottom: 60px;
+    box-sizing: border-box;
+}
+
+.footer_button{
+    width: 100px;
+    padding: 5px;
+    margin-right:15px;
+    line-height: 90%;
+    margin-bottom: 15px;
+}
+
+select{
+    margin-right: 15px;
+    width: 120px;
+}
+
+.text{
+    margin-right: 10px;
+    flex-wrap: nowrap;
+    position: absolute;
+    inline-size: 60%;
+}
+
+#fontsize_textbox{
+    width: 100px;
+}
+
+ul li {
+    list-style:none;
+    position: relative;
+    left: -30px;
+    width: 105%;
+    clear: left;
+}
+
+label {
+    margin-right: 5px;
+}
+
+.input_label{
+    width: 140px;
+    /* width: 20%; */
+    float: left;
+}

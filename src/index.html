@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>SimpleMemo</title>
+        <link rel="stylesheet" href="css/index.css">
+        <script src="js/mousetrap.js" charset="utf-8"></script>
+        <script src="js/index.js" charset="utf-8"></script>
+    </head>
+    <body class="app-body">
+        <!-- <textarea style="resize: none; width: 90vw; height: 90vh" name="textarea_1"></textarea> -->
+        <!-- position fixedで位置固定できるかも -->
+        <!-- <textarea style="resize: none; width: 90%; height: 90vh" name="textarea_1"></textarea> -->
+        <!-- <span> -->
+            <button id="sheet_button">1</button>
+            <button id="save_button">Save</button>
+            <input type="text" id="filename_textbox_0" class="mousetrap" spellcheck="false" autocomplete="false" aria-autocomplete="none">
+            <input type="text" id="filename_textbox_1" class="mousetrap is-hidden" spellcheck="false" autocomplete="false" aria-autocomplete="none">
+            <input type="text" id="filename_textbox_2" class="mousetrap is-hidden" spellcheck="false" autocomplete="false" aria-autocomplete="none">
+        <!-- </span> -->
+
+        <!-- 非表示はdisplay:none, visiblity:hidden, hidden で検討する（速度、スクロールバーなどを考慮 -->
+        <textarea spellcheck="false" class="mousetrap page-bg-0" id="textarea_0" ></textarea>
+        <textarea spellcheck="false" class="mousetrap page-bg-1 is-hidden" id="textarea_1" ></textarea>
+        <textarea spellcheck="false" class="mousetrap page-bg-2 is-hidden" id="textarea_2" ></textarea>
+
+    </body>
+</html>

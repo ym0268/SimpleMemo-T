@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/main_setting.css">
+    <script src="js/local_setting.js" charset="utf-8"></script>
+    <title>個別設定 - SimpleMemo</title>
+</head>
+
+<body>
+    <div class="container">
+        <h3>文字コード</h3>
+        <ul>
+            <li class="now_encoding">
+                <label class="input_label">現在の文字コード:</label>
+                <label id="now_encoding_label">null</label>
+            </li>
+            <li>
+                <label for="new_encoding_selector" class="input_label">変更後の文字コード</label>
+                <select id="new_encoding_selector">
+                    <option value="Utf8">UTF8</option>
+                    <option value="ShiftJis">SJIS</option>
+                    <!-- <option value="UTF8">UTF8</option> -->
+                    <!-- <option value="UTF8_BOM">UTF8_BOM</option> -->
+                    <!-- <option value="SJIS">SJIS</option> -->
+                    <!-- <option value="JIS">JIS</option> -->
+                    <!-- <option value="EUCJP">EUCJP</option> -->
+                    <!-- <option value="UTF16">UTF16</option> -->
+                    <!-- <option value="UTF16BE">UTF16BE</option> -->
+                    <!-- <option value="UTF16LE">UTF16LE</option> -->
+                    <!-- <option value="UTF16BE_BOM">UTF16BE_BOM</option> -->
+                    <!-- <option value="UTF16LE_BOM">UTF16LE_BOM</option> -->
+                </select>
+            </li>
+            <li>
+                ※指定した文字コードで書き出します
+            </li>
+        </ul>
+    </div>
+    <footer>
+        <!-- TODO: https://qiita.com/d0ne1s/items/5c629bc543e70ed2bf98 -->
+        <button class="footer_button" id="cancel_button">キャンセル</button>
+        <button class="footer_button" id="ok_button">OK</button>
+    </footer>
+
+</body>
+
+</html>

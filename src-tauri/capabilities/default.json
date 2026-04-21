@@ -1,0 +1,13 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "Capability for the main window",
+  "windows": ["main", "global_setting_window", "local_setting_window", "reload_encoding_window", "version_window"],
+  "permissions": [
+    "core:default",
+    "core:window:allow-close",
+    "core:window:allow-set-enabled",
+    "core:window:allow-set-title",
+    "dialog:allow-message"
+  ]
+}
