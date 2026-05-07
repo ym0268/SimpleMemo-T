@@ -5,6 +5,7 @@ let settings = null;
 
 /* 全体設定ウィンドウ */
 window.onload = function () {
+  window.SimpleMemoShortcutBlocker.enable();
   document.addEventListener('contextmenu', (event) => {
     event.preventDefault();
   });

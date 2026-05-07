@@ -4,6 +4,7 @@ const {getCurrentWindow} = window.__TAURI__.window;
 let settings = null;
 
 window.onload = function () {
+  window.SimpleMemoShortcutBlocker.enable();
   document.addEventListener('contextmenu', (event) => {
     event.preventDefault();
   });
