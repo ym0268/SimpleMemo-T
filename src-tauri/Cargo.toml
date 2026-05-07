@@ -1,6 +1,6 @@
 [package]
 name = "simplememo-t"
-version = "0.1.0"
+version = "0.1.1"
 description = "Lightweight Tauri desktop memo app"
 authors = ["ym0268"]
 edition = "2021"
