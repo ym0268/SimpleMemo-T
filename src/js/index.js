@@ -19,6 +19,7 @@ let lockStatus = null;
 
 // TODO: TauriEvent.WINDOW_CREATEDにした方がよい？
 window.onload = async function () {
+  window.SimpleMemoShortcutBlocker.enable();
   setStaticUiEvents();
   setContextMenu();
   setKeyBind();
